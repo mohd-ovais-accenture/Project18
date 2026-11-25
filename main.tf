@@ -13,9 +13,9 @@ provider "aws" {
 }
 
 resource "aws_ssm_parameter" "gitops_demo" {
-  name  = "/project18/ovais/gitops/run-final"
+  name  = "/project18/ovais/gitops/pr-update-v1"
   type  = "String"
-  value = "deployed-via-gitops-v1"
+  value = "gitops-pr-update-v1"
 
   tags = {
     Project = "Project18-GitOps"
