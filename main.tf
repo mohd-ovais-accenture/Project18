@@ -26,7 +26,3 @@ resource "aws_ssm_parameter" "gitops_demo" {
 output "parameter_name" {
   value = aws_ssm_parameter.gitops_demo.name
 }
-
-output "parameter_value" {
-  value = aws_ssm_parameter.gitops_demo.value
-}
